@@ -162,8 +162,8 @@ endif
 #Debugging/Optimization
 ifeq ($(DEBUG), 1)
 #ASMFLAGS += -g -gtabs+
-CFLAGS += -g -O0
-LDFLAGS += -O0
+CFLAGS += -g -Og
+LDFLAGS += -Og
 else
 ifneq ($(LTO), 1)
 CFLAGS += -g  # always include debug info in the ELF, unless LTO is on
