@@ -50,7 +50,7 @@ void mp_hal_stdio_mode_orig(void);
 
 #if MICROPY_PY_BUILTINS_INPUT && MICROPY_USE_READLINE == 0
 
-#include <malloc.h>
+#include <stdlib.h>
 #include "py/misc.h"
 #include "input.h"
 #define mp_hal_readline mp_hal_readline
